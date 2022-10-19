@@ -1,0 +1,32 @@
+[
+    {
+        "name":"Steve",
+        "repo":"git-clone",
+        "status": "public",
+        "stack":"Next.js Tailswind"
+    },
+    {
+        "name":"Steve",
+        "repo":"alx-clone",
+        "status": "public",
+        "stack":"Next.js Tailswind"
+    },
+    {
+        "name":"Steve",
+        "repo":"twitter-clone",
+        "status": "public",
+        "stack":"Next.js Tailswind"
+    },
+    {
+        "name":"Steve",
+        "repo":"Python projects",
+        "status": "public",
+        "stack":"Next.js Tailswind"
+    },
+    {
+        "name":"Steve",
+        "repo":"Registration",
+        "status": "public",
+        "stack":"Next.js Tailswind"
+    }
+]
