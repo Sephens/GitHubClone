@@ -1,0 +1,110 @@
+@mixin lines {
+  height: 1px;
+  background-color: gray;
+  width: 100%;
+  margin: 14px 0 20px;
+}
+
+.main-right {
+  flex: 1;
+  background-color: rgb(29, 26, 26);
+  color: gray;
+  height: 100vh;
+
+  .main-right-container {
+    padding: 40px;
+
+    .main-right-text {
+      display: flex;
+      gap: 24px;
+
+      h2 {
+        font-size: 16px;
+        margin-left: 8px;
+        cursor: pointer;
+        padding: 6px;
+        border-radius: 4px;
+        transition-delay: 0.04s;
+      }
+
+      :hover {
+        background-color: rgb(197, 211, 206);
+      }
+    }
+    .line-two{
+        @include lines();
+    }
+
+    .box{
+        background-color: rgb(51, 47, 43);
+        border-radius: 4px;
+        padding: 26px;
+        border: 1px solid gray;
+
+        p{
+            margin: 16px 0;
+        }
+
+        .btn{
+            background-color: rgb(97, 69, 69);
+            border: 1px solid rgb(80, 80, 80);
+            border-radius: 4px;
+            padding: 7px 14px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        a{
+            text-decoration: none;
+            color: rgb(15, 115, 161);
+        }
+    }
+
+    .box-center{
+        font-size: 14px;
+        margin-top: 30px;
+
+        .first-box-center{
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            gap: 4px;
+        }
+    }
+
+    .footer{
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+        max-width: 800px;
+        margin-top: 30px;
+
+        .first-footer{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100%;
+            gap: 4px;
+
+            img{
+                width: 24px;
+                object-fit: contain;
+            }
+        }
+
+        .second-footer{
+            display: flex;
+            flex: 1;
+            justify-content: space-around;
+            max-width: 480px;
+
+            .second-footer-inside{
+                h4{
+                    margin: 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+  }
+}
