@@ -1,0 +1,57 @@
+@import "./MainRight.scss";
+
+.menu{
+    background-color: rgb(49, 46, 46);
+    position: absolute;
+    top:44px;
+    right: 30px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    font-size: 14px;
+    width: 180px;
+
+    .menu-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p{
+            cursor: pointer;
+            width: 100%;
+            padding: 6px 16px;
+
+            a{
+                text-decoration: none;
+                color: white;
+            }
+
+            &:last-child{
+                margin-bottom: 8px;
+                padding: 6px 16px;
+            }
+
+            &:hover{
+                background-color: rgb(0, 136, 255);
+            }
+        }
+
+        .line-three{
+            @include lines();
+            margin: 8px 0;
+        }
+
+        .menu-status {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            input{
+                background-color: transparent;
+                border: 1px solid gray;
+                border-radius: 4px;
+                padding: 8px;
+                width: 80%;
+            }
+        }
+    }
+}
