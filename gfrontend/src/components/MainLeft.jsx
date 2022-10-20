@@ -1,8 +1,8 @@
-import React from 'react'
-import { IoMdArrowDropdown } from 'react-icons/io'
-import myimage from '../images/myimage.png'
-import list from '../list.json'
-import {Link} from 'react-router-dom'
+import React from "react";
+import { IoMdArrowDropdown } from "react-icons/io";
+import myimage from "../images/myimage.png";
+import list from "../list.json";
+import { Link } from "react-router-dom";
 
 function MainLeft() {
   return (
@@ -25,35 +25,31 @@ function MainLeft() {
             <button>New</button>
           </div>
           {/* find repo input */}
-          <div className='input-box'>
-          <input
-              type="text" placeholder="Find a repository..."/>
+          <div className="input-box">
+            <input type="text" placeholder="Find a repository..." />
           </div>
         </div>
         {/* list of repos */}
-        <div className='main-left-list'>
-        {list.map((item, index)=>(
-            <div className='item' key={index}>
-            <img src={myimage} alt='myimage' />
+        <div className="main-left-list">
+          {list.map((item, index) => (
+            <div className="item" key={index}>
+              <img src={myimage} alt="myimage" />
 
-            <div>
+              <div>
                 <h4>{`${item.name}/${item.repo}`}</h4>
+              </div>
             </div>
+          ))}
 
-            </div>
-        ))}
-
-        <Link to='/Profile'>Show More</Link>
-
+          <Link to="/Profile">Show More</Link>
         </div>
 
         <div className="line" />
-        <div className='recent-repo'>
-            <div className='recent-repos'>
-                <h4>Recent Activity</h4>
-            </div>
+        <div className="recent-repo">
+          <div className="recent-repos">
+            <h4>Recent Activity</h4>
+          </div>
         </div>
-
 
         <div className="line" />
 
@@ -62,19 +58,17 @@ function MainLeft() {
             <h4>Your Team</h4>
           </div>
           {/* find repo input */}
-          <div className='input-box'>
-          <input
-              type="text" placeholder="Find a team..."/>
+          <div className="input-box">
+            <input type="text" placeholder="Find a team..." />
           </div>
         </div>
-
-
-
-
-
       </div>
+
+      <div className="line" />
+
+
     </div>
-  )
+  );
 }
 
-export default MainLeft
+export default MainLeft;

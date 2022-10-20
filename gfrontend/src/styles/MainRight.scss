@@ -72,39 +72,6 @@
         }
     }
 
-    .footer{
-        font-size: 12px;
-        display: flex;
-        justify-content: space-between;
-        max-width: 800px;
-        margin-top: 30px;
-
-        .first-footer{
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            height: 100%;
-            gap: 4px;
-
-            img{
-                width: 24px;
-                object-fit: contain;
-            }
-        }
-
-        .second-footer{
-            display: flex;
-            flex: 1;
-            justify-content: space-around;
-            max-width: 480px;
-
-            .second-footer-inside{
-                h4{
-                    margin: 10px;
-                    cursor: pointer;
-                }
-            }
-        }
-    }
+   
   }
 }

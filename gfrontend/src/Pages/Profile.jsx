@@ -3,7 +3,7 @@ import {TbBook, TbBook2} from 'react-icons/tb';
 import {AiOutlineInbox} from 'react-icons/ai';
 import {FiBox, FiStar} from "react-icons/fi"
 import Left from '../components/Left';
-import Overview from '../components/Overview'
+import Overview from '../components/Overview';
 
 function Profile () {
   return (
@@ -44,7 +44,10 @@ function Profile () {
 
     </div>
 
+    <div className='line-four'/>
     </div>
+    
+
   )
 }
 
