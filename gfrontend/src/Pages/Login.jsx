@@ -1,56 +1,68 @@
+import axios from "axios"
 import '../styles/Login.scss'
-import  PropTypes from 'prop-types';
 import React, {useState} from 'react'
 
-async function loginUser(credentials){
-  return fetch('http://localhost:8080/login', {
-    method: 'POST' ,
-    headers: {
-      'ContentType': 'application/json'
-    },
-    body: JSON.stringify(credentials)
-  })
-  .then(data => data.json)
-}
+// async function loginUser(credentials){
+//   return fetch('http://localhost:8080/login', {
+//     method: 'POST' ,
+//     headers: {
+//       'ContentType': 'application/json'
+//     },
+//     body: JSON.stringify(credentials)
+//   })
+//   .then(data => data.json)
+// }
 
 
-function Login({setToken}) {
-  const [firstname, setFirstname] = useState();
-  const [secname, setSecname] = useState();
+function Login() {
+
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
-  const [signup, setSignup] = useState(false);
+  const [login, setLogin] = useState(false);
 
-  const handleSubmit =async e => {
-    e.preventDefault();
-    const token = await loginUser({
-      firstname,
-      secname,
+
+const handleSubmit = (e) => {
+  e.preventDefault();
+  const configuration = {
+    method: "post",
+    url: "http://localhost:8080/login",
+    data: {
       email,
-      password
-    });
-    setToken(token);
-  }
+      password,
+    },
+  };
+  axios(configuration)
+  .then((result)=>{
+    setLogin(true);
+  })
+  .catch((er) => {
+    er = new Error();
+  })
+
+}
   return (
     <div className='login-wrapper'>
     <h2>Please Log In</h2>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={(e)=>handleSubmit(e)}>
         <label>
-          <p>Username</p>
-          <input type="text" placeholder="username" onChange={e => setUserName(e.target.value)}/>
+          <p>Email</p>
+          <input type="text" value={email} placeholder="username" onChange={e => setEmail(e.target.value)}/>
         </label>
         <label>
           <p>Password</p>
-          <input type="password" placeholder="password" onChange={e => setPassword(e.target.value)}/>
+          <input type="password" value={password} placeholder="password" onChange={e => setPassword(e.target.value)}/>
         </label>
         <div>
-          <button type='submit'>Log In</button>
+          <button type='submit' onClick={(e)=>handleSubmit(e)}>Log In</button>
         </div>
+        {login ? (
+          <p className="text-success">Login Successful</p>
+
+        ) : (
+          <p className="text-danger">You are not Logged in</p>
+        )}
       </form>
     </div>
   )
-}
-Login.propTypes = {
-  setToken: PropTypes.func.isRequired
 }
 export default Login;
