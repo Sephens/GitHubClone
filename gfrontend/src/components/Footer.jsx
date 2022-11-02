@@ -7,8 +7,8 @@ function Footer() {
     <div className="footer">
       <div className="first-footer">
         <img src={image} alt="footerimg" />
-        <AiOutlineCopyright />
-        <h4>Steve</h4>
+        <AiOutlineCopyright className="copyright" />
+        <h4>Steve 2022</h4>
       </div>
       <div className="second-footer">
         <div className="second-footer-inside">

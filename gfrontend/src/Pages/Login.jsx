@@ -15,13 +15,18 @@ async function loginUser(credentials){
 
 
 function Login({setToken}) {
-  const [username, setUserName] = useState();
+  const [firstname, setFirstname] = useState();
+  const [secname, setSecname] = useState();
+  const [email, setEmail] = useState();
   const [password, setPassword] = useState();
+  const [signup, setSignup] = useState(false);
 
   const handleSubmit =async e => {
     e.preventDefault();
     const token = await loginUser({
-      username,
+      firstname,
+      secname,
+      email,
       password
     });
     setToken(token);
