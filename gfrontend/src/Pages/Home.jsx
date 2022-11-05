@@ -1,13 +1,13 @@
-<<<<<<< HEAD
 import React from "react";
-import logo from '../images/logo2.png'
+import '../styles/_home.css';
+import Navbar from "../components/NavBar2";
 
 function Home() {
   return (
-    <div className="container">
-      <div className="nav">
+    <div className="containery">
+    <Navbar />
+      <div className="navi">
         <div className="logo">
-        <img src={logo} alt="logo"/>
 
         </div>
       </div>
@@ -16,14 +16,3 @@ function Home() {
 }
 
 export default Home;
-=======
-import React from 'react'
-
-function Home() {
-  return (
-    <div>Home</div>
-  )
-}
-
-export default Home;
->>>>>>> master

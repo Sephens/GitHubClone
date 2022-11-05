@@ -1,0 +1,8 @@
+.containery{
+    background-image: url("../images/land2.jpg");
+    height: 130vh;
+    width: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
