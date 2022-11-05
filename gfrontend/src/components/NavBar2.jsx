@@ -5,10 +5,9 @@ import { Link } from "react-router-dom";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { FiPackage } from "react-icons/fi";
 import { MdSecurity } from "react-icons/md";
-import { TiDeviceDesktop, TiFlowChildren,  } from "react-icons/ti"
+import { TiDeviceDesktop, TiFlowChildren } from "react-icons/ti";
 import { TbMessageCode } from "react-icons/tb";
 import { GoEye, GoCommentDiscussion } from "react-icons/go";
-
 
 function NavBar2() {
   return (
@@ -28,37 +27,82 @@ function NavBar2() {
               Product <RiArrowDropDownLine />
             </a>
             <div className="prod-menu">
-              <ul>
-                <li>
-                  <a href="#"><TiFlowChildren/> Actions
-                  <span>Automate any workflow</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#"><FiPackage/> Packages</a>
-                </li>
-                <li>
-                  <a href="#"> <MdSecurity/> Security</a>
-                </li>
-                <li>
-                  <a href="#"><TiDeviceDesktop/> Codespaces</a>
-                </li>
-                <li>
-                  <a href="#">Copilot</a>
-                </li>
-                <li>
-                  <a href="#"><TbMessageCode/> Code Review</a>
-                </li>
-                <li>
-                  <a href="#"><GoEye/> Issues</a>
-                </li>
-                <li>
-                  <a href="#"><GoCommentDiscussion/> Discussions</a>
-                </li>
-                <li>
-                  <a href="#">Explore</a>
-                </li>
-              </ul>
+            <div className="menu-container">
+             
+                <div className="main-menu">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <TiFlowChildren /> Actions
+                      <span>Automate any workflow</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <FiPackage /> Packages{" "}
+                      <span>Host and Manage Packages</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      {" "}
+                      <MdSecurity /> Security{" "}
+                      <span>Find and fix vulnerabilities</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <TiDeviceDesktop /> Codespaces{" "}
+                      <span>Instant dev environments</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Copilot <span>Write better code with AI</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <TbMessageCode /> Code Review{" "}
+                      <span>Manage code changes</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <GoEye /> Issues <span>Plan and track work</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <GoCommentDiscussion /> Discussions{" "}
+                      <span>Collaborate outside of code</span>
+                    </a>
+                  </li>
+                  </ul>
+                </div>
+                <div className="line"/>
+                <div className="explore-product">
+                <ul>
+                <h6>Explore</h6>
+                  <li>
+                    <ul>
+                      <li>
+                        <a href="#">All Features</a>
+                      </li>
+                      <li>
+                        <a href="#">Documentation</a>
+                      </li>
+                      <li>
+                        <a href="#">GitHub Skills</a>
+                      </li>
+                      <li>
+                        <a href="#">Blog</a>
+                      </li>
+                    </ul>
+                  </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </li>
           <li className="soln">
@@ -80,7 +124,7 @@ function NavBar2() {
             </div>
           </li>
           <li className="open-source">
-            <a href="#" >
+            <a href="#">
               Open Source <RiArrowDropDownLine />
             </a>
             <div className="source-menu">
@@ -101,10 +145,6 @@ function NavBar2() {
             <a href="#">Pricing</a>
           </li>
         </ul>
-        {/* <h4>Product</h4>
-        <h4>Solution</h4>
-        <h4>Open Source</h4>
-        <h4>Pricing</h4> */}
       </div>
       {/* right */}
 
