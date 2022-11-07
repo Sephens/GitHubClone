@@ -1,7 +1,7 @@
 import axios from "axios"
 import '../styles/Login.scss'
 import React, {useState} from 'react';
-import Cookies from 'universal-cookie'
+// import Cookies from 'universal-cookie'
 
 // async function loginUser(credentials){
 //   return fetch('http://localhost:8080/login', {
