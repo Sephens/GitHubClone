@@ -21,7 +21,7 @@ function Login() {
   const [password, setPassword] = useState();
   const [login, setLogin] = useState(false);
 
-  const cookies = new Cookies();
+  // const cookies = new Cookies();
 
 const handleSetEmail = (e) => {
   setEmail(e.target.value)
@@ -47,11 +47,11 @@ const handleSubmit = (e) => {
     console.log(result);
 
     // This code above sets the cookie with cookie.set(). It takes three arguments: Name of the cookie (here it's "TOKEN", but it can be anything that you choose), Value of the cookie (result.data.token), and on which page or route you want it to be available (setting the path to "/" makes the cookie available in all the pages).
-    cookies.set("TOKEN", result.data.token,{
-      path: "/",
-    });
+    // cookies.set("TOKEN", result.data.token,{
+    //   path: "/",
+    // });
 
-    window.location.href("/Profile")
+    // window.location.href("/Profile")
   })
   .catch((er) => {
     er = new Error();
