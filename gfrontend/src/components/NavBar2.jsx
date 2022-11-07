@@ -8,6 +8,7 @@ import { MdSecurity } from "react-icons/md";
 import { TiDeviceDesktop, TiFlowChildren } from "react-icons/ti";
 import { TbMessageCode } from "react-icons/tb";
 import { GoEye, GoCommentDiscussion } from "react-icons/go";
+import { GiAstronautHelmet } from "react-icons/gi";
 
 function NavBar2() {
   return (
@@ -27,79 +28,75 @@ function NavBar2() {
               Product <RiArrowDropDownLine />
             </a>
             <div className="prod-menu">
-            <div className="menu-container">
-             
+              <div className="menu-container">
                 <div className="main-menu">
-                <ul>
-                  <li>
-                    <a href="#">
-                      <TiFlowChildren /> Actions
-                      <span>Automate any workflow</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <FiPackage /> Packages{" "}
-                      <span>Host and Manage Packages</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      {" "}
-                      <MdSecurity /> Security{" "}
-                      <span>Find and fix vulnerabilities</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <TiDeviceDesktop /> Codespaces{" "}
-                      <span>Instant dev environments</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Copilot <span>Write better code with AI</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <TbMessageCode /> Code Review{" "}
-                      <span>Manage code changes</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <GoEye /> Issues <span>Plan and track work</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <GoCommentDiscussion /> Discussions{" "}
-                      <span>Collaborate outside of code</span>
-                    </a>
-                  </li>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <TiFlowChildren /> Actions
+                        <span>Automate any workflow</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <FiPackage /> Packages
+                        <span>Host and Manage Packages</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        {" "}
+                        <MdSecurity /> Security{" "}
+                        <span>Find and fix vulnerabilities</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <TiDeviceDesktop /> Codespaces{" "}
+                        <span>Instant dev environments</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <GiAstronautHelmet />
+                        Copilot <span>Write better code with AI</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <TbMessageCode /> Code Review{" "}
+                        <span>Manage code changes</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <GoEye /> Issues <span>Plan and track work</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <GoCommentDiscussion /> Discussions{" "}
+                        <span>Collaborate outside of code</span>
+                      </a>
+                    </li>
                   </ul>
                 </div>
-                <div className="line"/>
+                <div className="line" />
                 <div className="explore-product">
-                <ul>
-                <h6>Explore</h6>
-                  <li>
-                    <ul>
-                      <li>
-                        <a href="#">All Features</a>
-                      </li>
-                      <li>
-                        <a href="#">Documentation</a>
-                      </li>
-                      <li>
-                        <a href="#">GitHub Skills</a>
-                      </li>
-                      <li>
-                        <a href="#">Blog</a>
-                      </li>
-                    </ul>
-                  </li>
+                  <ul>
+                    <h6>Explore</h6>
+                        <li>
+                          <a href="#">All Features</a>
+                        </li>
+                        <li>
+                          <a href="#">Documentation</a>
+                        </li>
+                        <li>
+                          <a href="#">GitHub Skills</a>
+                        </li>
+                        <li>
+                          <a href="#">Blog</a>
+                        </li>
                   </ul>
                 </div>
               </div>

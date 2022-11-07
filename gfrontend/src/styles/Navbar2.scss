@@ -97,7 +97,7 @@
         left: 0;
         top: 100%;
         border-radius: 5px;
-        background-color: beige;
+        background-color: rgb(103, 155, 114);
 
         ul {
           display: block;
@@ -137,6 +137,16 @@
 
             .line {
               @include lines();
+            }
+
+            .explore-product{
+              margin: 0;
+
+
+              h6{
+                color: black;
+                font-size: 14px;
+              }
             }
           }
         }
